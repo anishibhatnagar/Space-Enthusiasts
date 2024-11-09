@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Syncopate-Bold";
+    src: url("font/Syncopate/Syncopate-Bold.ttf");
+}
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999; /* Place video behind everything */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Cover the entire background */
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 250%;
+}
+
+body {
+    min-height: 220vh; /* Ensures the background covers the entire viewport */
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header Styling */
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px
+    
+}
+
+.logo {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 21px;
+    color: #fff;
+}
+
+/* Navigation Menu */
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 50px;
+    list-style: none;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.nav ul li:hover {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling for Hyperlinks */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Syncopate-Bold";
+}
+
+a:hover {
+    color: #8DA4EA;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #8DA4EA;
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    background-color: #8DA4EA;
+    color: #0d0d0d;
+}
+
+/* Main Content Styling */
+.content h1 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 3%;
+}
+
+.content h1 span {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 24px;
+    padding: 30px 0px 40px;
+}
+
+/* Centered Button Wrapper */
+.center-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button with Icon */
+.content button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.content .btn span {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+/* Earth Image and Decorations */
+.earth-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    position: relative;
+}
+
+.earth-img::before {
+    content: '';
+    position: absolute;
+    background-image: url("img/globe.png");
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 210px;
+    width: 145px;
+    height: 145px;
+}
+
+.earth-img::after {
+    content: '';
+    position: absolute;
+    background-image: url("img/space-research.png");
+    background-repeat: no-repeat;
+    right: 120px;
+    top: -204px;
+    width: 35%;
+    height: 147%;
+}
+
+/* Forum Section Styling */
+.forum-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.forum-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.forum-container h2 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 32px;
+    color: #8DA4EA;
+    margin-bottom: 20px;
+}
+
+#searchBar {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Thread Item Styling */
+.thread-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.thread-item h3 {
+    margin-bottom: 10px;
+}
+
+.thread-actions {
+    display: flex;
+    gap: 15px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-family: "Syncopate-Bold";
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .forum-container h2 {
+        font-size: 24px;
+    }
+
+    .nav ul li {
+        margin-left: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .earth-img::before {
+        left: 100px;
+    }
+
+    .earth-img::after {
+        right: 60px;
+    }
+}

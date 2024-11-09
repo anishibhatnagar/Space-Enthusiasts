@@ -1,0 +1,282 @@
+@font-face {
+    font-family: "Syncopate-Bold";
+    src: url("font/Syncopate/Syncopate-Bold.ttf");
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0d0d0d url("img/background.png") no-repeat center/cover;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background: black;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 24px; /* Adjusted to maintain a consistent size */
+    color: #8DA4EA;
+}
+
+/* Navigation Menu */
+.nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px; /* Adjusted to maintain consistency */
+    color: white;
+    margin-left: 50px;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav ul li:hover {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styling for Hyperlinks */
+a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Syncopate-Bold";
+}
+
+a:hover {
+    color: #8DA4EA;
+    text-decoration: underline;
+}
+
+/* Add Book Section Styling */
+#add-book-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8DA4EA;
+}
+
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#book-form input, 
+#book-form textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+#book-form textarea {
+    height: 150px;
+}
+
+#book-form button {
+    background-color: #8DA4EA;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Syncopate-Bold";
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#book-form button:hover {
+    background-color: #4facfe;
+}
+
+/* Main Content Styling */
+.content h1 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 3%;
+}
+
+.content h1 span {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 24px;
+    padding: 30px 0 40px;
+}
+
+/* Centered Button Wrapper */
+.center-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button with Icon */
+.content button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.content .btn span {
+    border: 2px solid white;
+    border-radius: 30px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+/* Earth Image and Decorations */
+.earth-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    position: relative;
+}
+
+.earth-img::before {
+    content: '';
+    position: absolute;
+    background-image: url("img/globe.png");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 210px;
+    width: 145px;
+    height: 145px;
+}
+
+.earth-img::after {
+    content: '';
+    position: absolute;
+    background-image: url("img/space-research.png");
+    background-repeat: no-repeat;
+    right: 120px;
+    top: -204px;
+    width: 35%;
+    height: 147%;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    font-family: "Syncopate-Bold";
+}
+
+/* Button Styles */
+.btn {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: white;
+    border: 1px solid #8DA4EA;
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8DA4EA;
+    color: #0d0d0d;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+    
+    .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .nav ul li {
+        margin-left: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .earth-img::before {
+        left: 100px;
+    }
+
+    .earth-img::after {
+        right: 60px;
+    }
+}

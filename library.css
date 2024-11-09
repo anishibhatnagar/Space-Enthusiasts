@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "Syncopate-Bold";
+    src: url("font/Syncopate/Syncopate-Bold.ttf");
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #0d0d0d91;
+    color: white;
+    overflow-x: hidden;
+    text-align: center;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header Styling */
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px
+    
+}
+
+
+.logo {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 24px;
+    color: #8DA4EA;
+}
+
+/* Navigation Menu */
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-left: 30px;
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav ul li:hover {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav ul li a:hover {
+    color: #8DA4EA;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #8DA4EA;
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8DA4EA;
+    color: #0d0d0d;
+}
+
+/* Main Content Styling */
+.content h1 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    line-height: 70px;
+    margin-top: 3%;
+}
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999; /* Place video behind everything */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Cover the entire background */
+}
+
+
+.content h1 span {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content p {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 24px;
+    padding: 30px 0px 40px;
+}
+
+/* Centered Button Wrapper */
+.center-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button with Icon */
+.content button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.content .btn span {
+    border: 2px solid #fff;
+    border-radius: 30px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+}
+
+/* Earth Image and Decorations */
+.earth-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 37px;
+    position: relative;
+}
+
+.earth-img::before {
+    content: '';
+    position: absolute;
+    background-image: url("img/globe.png");
+    background-repeat: no-repeat;
+    top: 0px;
+    left: 210px;
+    width: 145px;
+    height: 145px;
+}
+
+.earth-img::after {
+    content: '';
+    position: absolute;
+    background-image: url("img/space-research.png");
+    background-repeat: no-repeat;
+    right: 120px;
+    top: -204px;
+    width: 35%;
+    height: 147%;
+}
+
+/* Library Section Styling */
+#library-section {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.447);
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.container {
+    text-align: center;
+    color: #fff;
+}
+
+.container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8DA4EA;
+}
+
+.container p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Search Bar and Filter Buttons */
+.filter-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+#search-bar {
+    width: 80%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #514d4d1e;
+    color: #fff;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.filter-buttons .btn {
+    background-color: #8DA4EA;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons .btn:hover {
+    background-color: #4facfe;
+}
+
+/* Book List Styling */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.book-item {
+    background-color: #2222224e;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.book-item:hover {
+    background-color: #333;
+}
+
+.book-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #8DA4EA;
+}
+
+.book-item p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Add Book Form Styling */
+#book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+#book-form input, 
+#book-form textarea {
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+    border: none;
+    background-color: #33333361;
+    color: #fff;
+}
+
+#book-form button {
+    background-color: #8DA4EA;
+    border: none;
+    padding: 15px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: "Syncopate-Bold";
+}
+
+#book-form button:hover {
+    background-color: #4facfe;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin-top: 50px;
+}
+
+footer p {
+    color: #fff;
+    font-family: "Syncopate-Bold";
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+    
+    .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .nav ul li {
+        margin-left: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+
+    .earth-img::before {
+        left: 100px;
+    }
+
+    .earth-img::after {
+        right: 60px;
+    }
+}

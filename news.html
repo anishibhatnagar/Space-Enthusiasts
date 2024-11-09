@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space News</title>
+    <link rel="stylesheet" href="news-style.css">
+</head>
+<body>
+    <!-- Video Background -->
+    <video autoplay muted loop id="bg-video">
+        <source src="img/newsbg.mp4" type="video/mp4"> <!-- Change this to your video path -->
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Starry Background Effect -->
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+
+    <header>
+        <div class="logo">
+            <h2>Space News</h2>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <section class="news-filter">
+        <h1>Latest Space News</h1>
+        <div class="filter-buttons">
+            <button class="btn" onclick="filterNews('all')">All</button>
+            <button class="btn" onclick="filterNews('galaxies')">Galaxies</button>
+            <button class="btn" onclick="filterNews('technology')">Technology</button>
+            <button class="btn" onclick="filterNews('exploration')">Exploration</button>
+        </div>
+    </section>
+
+    <section class="news-container">
+        <div class="news-item" data-category="galaxies">
+            <h2>The Mysteries of Andromeda</h2>
+            <p>Explore the wonders of the Andromeda Galaxy and what makes it unique in the cosmos.</p>
+        </div>
+        <div class="news-item" data-category="technology">
+            <h2>New SpaceX Innovations</h2>
+            <p>SpaceX announces new technologies aimed at enhancing deep space travel capabilities.</p>
+        </div>
+        <div class="news-item" data-category="exploration">
+            <h2>Mission to Mars</h2>
+            <p>NASA's latest mission to Mars reveals fascinating discoveries about the red planet.</p>
+        </div>
+        <div class="news-item" data-category="galaxies">
+            <h2>Black Holes and Quasars</h2>
+            <p>A detailed study on the relationship between black holes and quasars in distant galaxies.</p>
+        </div>
+        <div class="news-item" data-category="technology">
+            <h2>Satellite Networks</h2>
+            <p>How satellite networks are revolutionizing global communication and space research.</p>
+        </div>
+    </section>
+
+    <script src="news-script.js"></script>
+</body>
+</html>

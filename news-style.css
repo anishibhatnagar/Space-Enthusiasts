@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Video Background */
+#bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -999; /* Place video behind everything */
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Cover the entire background */
+}
+
+/* Starry Background Effect */
+#stars, #stars2, #stars3 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1; /* Put stars behind content */
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-2000px);
+    }
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: 
+        0 0 5px #f8f8f8,
+        100px 100px 5px #FFF,
+        200px 150px 5px #FFF,
+        300px 200px 5px #FFF,
+        400px 100px 5px #FFF,
+        500px 300px 5px #FFF,
+        600px 200px 5px #FFF,
+        700px 300px 5px #FFF,
+        800px 150px 5px #FFF,
+        900px 200px 5px #FFF;
+    animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: 
+        0 0 10px #FFF,
+        100px 200px 10px #FFF,
+        200px 300px 10px #FFF,
+        300px 100px 10px #FFF,
+        400px 250px 10px #FFF;
+    animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: 
+        0 0 15px #FFF,
+        100px 150px 15px #FFF,
+        200px 250px 15px #FFF,
+        300px 100px 15px #FFF,
+        400px 300px 15px #FFF;
+    animation: animStar 150s linear infinite;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.logo h2 {
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav li {
+    margin-left: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* News Filter Section */
+.news-filter {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.news-filter h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons .btn {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons .btn:hover {
+    background-color: #666;
+}
+
+/* News Container */
+.news-container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.news-item {
+    background-color: rgba(35, 33, 33, 0.7);
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+}
+
+.news-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 16px;
+    line-height: 1.5;
+}

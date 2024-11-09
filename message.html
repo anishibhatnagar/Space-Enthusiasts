@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Chat</title>
+  <link rel="stylesheet" href="message.css">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h1 style="color: aliceblue;">🌐 Live Chat</h1>
+    </header>
+
+    <main class="chat-main">
+      <div id="chat-messages" class="chat-messages"></div>
+    </main>
+
+    <div class="chat-input-container">
+      <input type="text" id="username" placeholder="Enter your name" required />
+      <input type="text" id="message" placeholder="Type a message..." required />
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script> <!-- Import Socket.IO -->
+  <script src="messages.js"></script>
+</body>
+</html>
+

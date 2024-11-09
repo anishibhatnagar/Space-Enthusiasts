@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Community Library - COSMOLINK</title>
+  <link rel="stylesheet" href="library.css">
+  <script defer src="script.js"></script>
+</head>
+ <!-- Video Background -->
+ <video autoplay muted loop id="bg-video">
+  <source src="img/librarybg.mp4" type="video/mp4"> <!-- Change this to your video path -->
+  Your browser does not support the video tag.
+</video>
+<header>
+    
+  <nav class="nav">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          
+      </ul>
+  </nav>
+</header>
+<body>
+  
+
+  <section id="library-section">
+    <div class="container">
+      <h2>📚 Book Collection</h2>
+      <p>Explore our curated collection of space-related books. Use the search bar to find books or filter by category!</p>
+
+      <!-- Search Bar and Filter Buttons -->
+      <div class="filter-section">
+        <input type="text" id="search-bar" placeholder="Search books by title..." />
+        <div class="filter-buttons">
+          <button class="btn" onclick="filterBooks('all')">All</button>
+          <button class="btn" onclick="filterBooks('science')">Science</button>
+          <button class="btn" onclick="filterBooks('fiction')">Fiction</button>
+          <button class="btn" onclick="filterBooks('history')">History</button>
+        </div>
+      </div>
+
+      <!-- Book List -->
+      <div class="book-list" id="book-list">
+        <!-- Books will be dynamically added here -->
+      </div>
+
+      <!-- Add a New Book -->
+      <h2>Add a New Book</h2>
+      <form id="book-form">
+        <input type="text" id="book-title" placeholder="Book Title" required />
+        <input type="text" id="author-name" placeholder="Author" required />
+        <textarea id="description" placeholder="Brief Description" required></textarea>
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>Made by Space Enthusiasts 🌌 | 2024</p>
+  </footer>
+
+</body>
+</html>

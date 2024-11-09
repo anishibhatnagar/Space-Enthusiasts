@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <video autoplay muted loop id="bg-video">
+    <source src="img/discussionbg.mp4" type="video/mp4"> <!-- Change this to your video path -->
+    Your browser does not support the video tag.
+</video>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discussion Forum - COSMOLINK</title>
+  <link rel="stylesheet" href="forum.css">
+  <script defer src="script.js"></script>
+  <script defer src="forum.js"></script>
+</head>
+<body>
+  <header>
+    
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            
+        </ul>
+    </nav>
+</header>
+
+  <section id="forum" class="forum-section">
+    <div class="forum-container">
+      <h2>Discussion Forum</h2>
+      <button class="btn" onclick="createThread()">Create Thread</button>
+      <input type="text" id="searchBar" onkeyup="searchThreads()" placeholder="Search Threads...">
+      <div id="thread-list">
+        <!-- Threads will be dynamically created here -->
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>

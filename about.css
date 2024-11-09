@@ -1,0 +1,173 @@
+@font-face {
+    font-family: "Syncopate-Bold";
+    src: url("font/Syncopate/Syncopate-Bold.ttf");
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 220vh;
+    background-image: url("img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a background for better visibility */
+}
+
+.logo {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 21px;
+    color: #fff;
+}
+
+/* Navigation Menu */
+.nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    margin-left: 50px;
+    list-style: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    position: relative;
+}
+
+.nav ul li:hover {
+    background: linear-gradient(to bottom, #8DA4EA, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Hyperlinks Styles */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-family: "Syncopate-Bold";
+}
+
+a:hover {
+    color: #8DA4EA;
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #8DA4EA;
+    padding: 10px 25px;
+    border-top-left-radius: 10px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8DA4EA;
+    color: #0d0d0d;
+}
+
+/* Main Content Styles */
+#about {
+    padding: 50px;
+    text-align: center;
+}
+
+#about h1 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#about h2 {
+    font-family: "Syncopate-Bold";
+    font-weight: 800;
+    font-size: 24px;
+    color: #8DA4EA;
+    margin-top: 30px;
+}
+
+#about p {
+    font-family: "Syncopate-Bold";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+#about ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#about ul li {
+    font-family: "Syncopate-Bold";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d0d0d;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: #fff;
+    font-family: "Syncopate-Bold";
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 50px;
+    }
+
+    #about h1 {
+        font-size: 40px;
+    }
+
+    .nav ul li {
+        margin-left: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 8px 20px;
+    }
+}
